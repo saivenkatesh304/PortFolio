@@ -7,21 +7,21 @@ const projects = [
     title: "Fit-Formulas Website",
     category: "Web Development",
     description: "Developed a fitness website offering workout plans, user registration, and login functionality. Created responsive web pages with HTML, CSS, and JavaScript, enhancing user experience and engagement.",
-    image: "gym1.PNG",
+    image: "gym1.png",
     github: "https://github.com/saivenkatesh304/Fit-Formulas"
   },
   {
     title: "Face Recognition Attendance System",
     category: "Computer Vision",
     description: "Developed a solution that automates attendance tracking using facial recognition technology. It captures and processes facial images to identify individuals and mark their attendance in real time. This system enhances security, eliminates proxy attendance, and reduces manual errors",
-    image: "face.PNG",
+    image: "face.png",
     github: "https://github.com/saivenkatesh304/Face-Recognition-Attendance-System.git"
   },
   {
     title: "Agro-Vision",
     category: "Machine Learning",
     description: "Built a solution for real-time crop prediction, crop recommendation, and yield prediction using machine learning models. Implemented using Python, Flask, NumPy, and pickle for data handling and model storage",
-    image: "Agro.PNG",
+    image: "Agro.png",
     github: "https://github.com/saivenkatesh304/Agro_Vision"
   }
 ];

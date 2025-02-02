@@ -15,7 +15,7 @@ const About = () => {
             <motion.img
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300 }}
-              src="IMG1.JPG"
+              src="IMG1.jpg"
               alt="Profile"
               className="rounded-lg shadow-2xl w-full max-w-md mx-auto"
             />
