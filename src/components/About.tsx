@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import IMG1 from './IMG1.jpg';
 
 const About = () => {
   return (
@@ -15,7 +16,7 @@ const About = () => {
             <motion.img
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300 }}
-              src="IMG1.jpg"
+              src={IMG1}
               alt="Profile"
               className="rounded-lg shadow-2xl w-full max-w-md mx-auto"
             />

@@ -2,26 +2,31 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Github } from 'lucide-react';
 
+// Import images
+import gym1 from './gym1.png'; // Adjust the path as needed
+import face from './face.png'; // Adjust the path as needed
+import agro from './Agro.png'; // Adjust the path as needed
+
 const projects = [
   {
     title: "Fit-Formulas Website",
     category: "Web Development",
     description: "Developed a fitness website offering workout plans, user registration, and login functionality. Created responsive web pages with HTML, CSS, and JavaScript, enhancing user experience and engagement.",
-    image: "gym1.png",
+    image: gym1, // Use the imported image
     github: "https://github.com/saivenkatesh304/Fit-Formulas"
   },
   {
     title: "Face Recognition Attendance System",
     category: "Computer Vision",
     description: "Developed a solution that automates attendance tracking using facial recognition technology. It captures and processes facial images to identify individuals and mark their attendance in real time. This system enhances security, eliminates proxy attendance, and reduces manual errors",
-    image: "face.png",
+    image: face, // Use the imported image
     github: "https://github.com/saivenkatesh304/Face-Recognition-Attendance-System.git"
   },
   {
     title: "Agro-Vision",
     category: "Machine Learning",
     description: "Built a solution for real-time crop prediction, crop recommendation, and yield prediction using machine learning models. Implemented using Python, Flask, NumPy, and pickle for data handling and model storage",
-    image: "Agro.png",
+    image: agro, // Use the imported image
     github: "https://github.com/saivenkatesh304/Agro_Vision"
   }
 ];
@@ -47,7 +52,7 @@ const Projects = () => {
               className="bg-gray-900 rounded-lg overflow-hidden cursor-pointer"
             >
               <img
-                src={project.image}
+                src={project.image} // Use the imported image
                 alt={project.title}
                 className="w-full h-48 object-cover"
               />
@@ -85,7 +90,7 @@ const Projects = () => {
                 className="bg-gray-900 p-8 rounded-lg max-w-2xl w-full"
               >
                 <img
-                  src={selectedProject.image}
+                  src={selectedProject.image} // Use the imported image
                   alt={selectedProject.title}
                   className="w-full h-64 object-cover rounded-lg mb-6"
                 />
