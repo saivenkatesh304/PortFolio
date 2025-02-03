@@ -16,7 +16,7 @@ const Hero = () => {
             Sai Venkatesh
           </span>
         </h1>
-        <p className="text-gray-400 text-xl mb-8">Computer Science Stutent</p>
+        <p className="text-gray-400 text-xl mb-8">Computer Science Student</p>
         <div className="flex justify-center space-x-6">
           <motion.a
             whileHover={{ scale: 1.1 }}
