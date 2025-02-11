@@ -7,7 +7,8 @@ const certificates = [
   "Coursera Machine Learning specialization by Stanford University",
   "PupilFirst Web Development",
   "AICTE EduSkills AI ML Virtual Internship",
-  "CodersCave and Codsoft Internship Certificates"
+  "Coursera AWS Cloud Technical Essentials",
+  "Foundational C# with Microsoft"
 ];
 
 const Certificates = () => {

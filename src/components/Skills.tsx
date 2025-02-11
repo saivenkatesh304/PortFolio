@@ -7,7 +7,8 @@ const skillsData = {
   "Databases": ["SQL","MongoDB"],
   "Algorithms & Data Structures": ["Data Structures", "Algorithms", "Dynamic Programming"],
   "Technologies & Tools": ["Machine Learning", "Git", "Visual Studio"],
-  "Frameworks": ["Flask", "Pytorch", "Tensorflow"]
+  "Frameworks": ["Flask", "Pytorch", "Tensorflow"],
+  "Concepts":["Database Management System","Data Structues and Algorithms","Web Development"]
 };
 
 const Skills = () => {
