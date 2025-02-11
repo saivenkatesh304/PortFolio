@@ -39,13 +39,10 @@ npm run build
 ```
 Then, upload the `dist` folder to your preferred hosting provider (Vercel, Netlify, GitHub Pages, etc.).
 
-## Screenshots
-_Add relevant screenshots of the portfolio website here._
-
 ## Contact
 - **GitHub:** [Sai Venkatesh](https://github.com/saivenkatesh304)
 - **LinkedIn:** [Sai Venkatesh](www.linkedin.com/in/sai-venkatesh-2668452a3)
-- **Email:** _Your Email Here_
+- **Email:** saiv14076@gmail.com
 
 ## License
 This project is open-source and available under the MIT License.
