@@ -3,7 +3,7 @@
 A personal portfolio website showcasing my projects, skills, and experience in web development, machine learning, and artificial intelligence.
 
 ## Technology Used
-1. **Frontend:** React, Vite, HTML, CSS, JavaScript, Bootstrap
+1. **Frontend:** React, Vite, HTML, CSS, JavaScript, TypeScript, Bootstrap
 2. **Styling:** Tailwind CSS (if used), Custom CSS
 3. **Deployment:** Vercel / Netlify / GitHub Pages
 
