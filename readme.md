@@ -43,6 +43,3 @@ Then, upload the `dist` folder to your preferred hosting provider (Vercel, Netli
 - **GitHub:** [Sai Venkatesh](https://github.com/saivenkatesh304)
 - **LinkedIn:** [Sai Venkatesh](www.linkedin.com/in/sai-venkatesh-2668452a3)
 - **Email:** saiv14076@gmail.com
-
-## License
-This project is open-source and available under the MIT License.
