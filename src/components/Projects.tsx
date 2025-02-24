@@ -1,32 +1,41 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Github } from 'lucide-react';
+import { GithubIcon, ExternalLink } from 'lucide-react';
 
 // Import images
-import gym1 from './gym1.png'; // Adjust the path as needed
-import face from './face.png'; // Adjust the path as needed
-import agro from './Agro.png'; // Adjust the path as needed
+import gym1 from './gym1.png';
+import face from './face.png';
+import agro from './Agro.png';
+import assignment from './assignment.png';
 
 const projects = [
+  {
+    title: "Assignment Management System",
+    category: "Full Stack Development",
+    description: "Developed a web-based platform for managing assignments, submissions, and grading using React and Firebase. Implemented role-based access control for students and teachers, with features like assignment creation, submission tracking, and automated email notifications using SendGrid.",
+    image: assignment,
+    github: "https://github.com/saivenkatesh304/Assignment_Management_System",
+    livePreview: "https://assignment-system-ba971.web.app" // Change to actual URL
+  },
   {
     title: "Fit-Formulas Website",
     category: "Web Development",
     description: "Developed a fitness website offering workout plans, user registration, and login functionality. Created responsive web pages with HTML, CSS, and JavaScript, enhancing user experience and engagement.",
-    image: gym1, // Use the imported image
+    image: gym1,
     github: "https://github.com/saivenkatesh304/Fit-Formulas"
   },
   {
     title: "Face Recognition Attendance System",
     category: "Computer Vision",
-    description: "Developed a solution that automates attendance tracking using facial recognition technology. It captures and processes facial images to identify individuals and mark their attendance in real time. This system enhances security, eliminates proxy attendance, and reduces manual errors",
-    image: face, // Use the imported image
+    description: "Developed a solution that automates attendance tracking using facial recognition technology. It captures and processes facial images to identify individuals and mark their attendance in real time. This system enhances security, eliminates proxy attendance, and reduces manual errors.",
+    image: face,
     github: "https://github.com/saivenkatesh304/Face-Recognition-Attendance-System.git"
   },
   {
     title: "Agro-Vision",
     category: "Machine Learning",
-    description: "Built a solution for real-time crop prediction, crop recommendation, and yield prediction using machine learning models. Implemented using Python, Flask, NumPy, and pickle for data handling and model storage",
-    image: agro, // Use the imported image
+    description: "Built a solution for real-time crop prediction, crop recommendation, and yield prediction using machine learning models. Implemented using Python, Flask, NumPy, and pickle for data handling and model storage.",
+    image: agro,
     github: "https://github.com/saivenkatesh304/Agro_Vision"
   }
 ];
@@ -52,22 +61,35 @@ const Projects = () => {
               className="bg-gray-900 rounded-lg overflow-hidden cursor-pointer"
             >
               <img
-                src={project.image} // Use the imported image
+                src={project.image}
                 alt={project.title}
                 className="w-full h-48 object-cover"
               />
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2 text-white">{project.title}</h3>
                 <p className="text-gray-400 mb-4">{project.category}</p>
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-purple-500 hover:text-purple-400"
-                >
-                  <Github className="w-5 h-5 mr-2" />
-                  View on GitHub
-                </a>
+                <div className="flex gap-4">
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-purple-500 hover:text-purple-400"
+                  >
+                    <GithubIcon className="w-5 h-5 mr-2" />
+                    GitHub
+                  </a>
+                  {project.livePreview && (
+                    <a
+                      href={project.livePreview}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-green-500 hover:text-green-400"
+                    >
+                      <ExternalLink className="w-5 h-5 mr-2" />
+                      Live Preview
+                    </a>
+                  )}
+                </div>
               </div>
             </motion.div>
           ))}
@@ -90,7 +112,7 @@ const Projects = () => {
                 className="bg-gray-900 p-8 rounded-lg max-w-2xl w-full"
               >
                 <img
-                  src={selectedProject.image} // Use the imported image
+                  src={selectedProject.image}
                   alt={selectedProject.title}
                   className="w-full h-64 object-cover rounded-lg mb-6"
                 />
@@ -98,15 +120,28 @@ const Projects = () => {
                 <p className="text-gray-400 mb-6">{selectedProject.description}</p>
                 <div className="flex justify-between items-center">
                   <span className="text-purple-500">{selectedProject.category}</span>
-                  <a
-                    href={selectedProject.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center bg-purple-500 text-white px-4 py-2 rounded-lg hover:bg-purple-600 transition-colors"
-                  >
-                    <Github className="w-5 h-5 mr-2" />
-                    View Project
-                  </a>
+                  <div className="flex gap-4">
+                    <a
+                      href={selectedProject.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center bg-purple-500 text-white px-4 py-2 rounded-lg hover:bg-purple-600 transition-colors"
+                    >
+                      <GithubIcon className="w-5 h-5 mr-2" />
+                      GitHub
+                    </a>
+                    {selectedProject.livePreview && (
+                      <a
+                        href={selectedProject.livePreview}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition-colors"
+                      >
+                        <ExternalLink className="w-5 h-5 mr-2" />
+                        Live Preview
+                      </a>
+                    )}
+                  </div>
                 </div>
               </motion.div>
             </motion.div>
