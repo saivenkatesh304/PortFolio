@@ -22,7 +22,8 @@ const projects = [
     category: "Web Development",
     description: "Developed a fitness website offering workout plans, user registration, and login functionality. Created responsive web pages with HTML, CSS, and JavaScript, enhancing user experience and engagement.",
     image: gym1,
-    github: "https://github.com/saivenkatesh304/Fit-Formulas"
+    github: "https://github.com/saivenkatesh304/Fit-Formulas",
+    livePreview: "https://fit-formulas.vercel.app/"
   },
   {
     title: "Face Recognition Attendance System",
