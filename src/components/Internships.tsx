@@ -18,13 +18,6 @@ const internships = [
       "Completed Virtual Internship focused on Artificial intelligence and machine learning",
       "Gained hands-on experience with Google AI/ML tools, resources and platforms, enhancing skills in developing, deploying, and testing ML models."
     ]
-  },
-  {
-    title: "CodersCave Virtual Internship | Web Development",
-    duration: "May '3- Jun '3 2024",
-    description: [
-      "Developed an interface for Weather Dashboard using html,css and js which shows real time weather of any particular city."
-    ]
   }
 ];
 
